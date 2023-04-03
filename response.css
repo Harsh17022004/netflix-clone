@@ -1,0 +1,8 @@
+@media (max-width:767px){
+    .main-nav{
+        display: none;
+    }
+    .banner-content {
+        max-width: 100%;
+    }
+}

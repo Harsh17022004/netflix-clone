@@ -1,0 +1,222 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header css */
+header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all ease 800ms;
+}
+
+header.black_bg{
+    background-color: rgb(20, 20, 20);
+}
+
+.container {
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 60px;
+}
+
+.main-nav .nav-item {
+    display: inline-flex;
+    padding: 0px 16px;
+    cursor: pointer;
+    color: #bfbebe;
+}
+
+.main-nav .nav-item.active {
+    color: white;
+    font-weight: 550;
+}
+
+.brand {
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.left-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-cont,
+.right-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right-cont img {
+    max-width: 40px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.right-cont i {
+    color: white;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+
+
+/* moveis section */
+
+
+.movies-cont {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    padding: 12px 60px;
+}
+
+.movies-section {
+    width: 100%;
+}
+
+
+.movies-heading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.explore-nudge {
+    font-size: 12px;
+    font-weight: 200;
+    color: #54b9c5;
+    display: none;
+    cursor: pointer;
+    margin: 0px 7px;
+}
+
+.movies-heading:hover .explore-nudge {
+    display: inline-block;
+
+}
+
+.movie-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 20px 0;
+}
+
+.movie-item {
+    object-fit: contain;
+    margin: 0 4px;
+    cursor: pointer;
+    width: 240px;
+}
+
+.movie-item:hover {
+    transform: scale(1.2);
+    transition: transform ease 500ms;
+}
+
+/* banner  */
+.banner-section{
+    /* background-image: url("https://image.tmdb.org/t/p/original/sP9mRWiCxCuy17tUJfV8TpSZpqc.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 98vh;
+    position: relative;
+    padding-top: 80px;
+    
+}
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 70px;
+    max-width: 50%;
+    position: relative;
+}
+
+.banner_tittle {
+    color: white;
+    font-size: 86px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.banner_info {
+    margin-bottom: 14px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: white;
+}
+
+.banner_review {
+    font-size: 16.3px;
+    color: #fff;
+    line-height: 1.3;
+    margin: 16.4px;
+}
+
+.action-btn-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-right: 11px;
+    padding: 8px 23px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.action-btn:last-child{
+    color: #fff;
+    background: #878f8d;
+}
+
+.banner_fadebottom{
+    height: 120px;
+    background: linear-gradient(180deg , 
+        transparent, rgba(37,37,37,.61),
+        #141414
+    );
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
