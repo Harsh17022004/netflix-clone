@@ -1,6 +1,6 @@
 //  Consts 
 
-const apiKeY = "3db9c30ad30570afb5ebead20b6fb4b6";
+const apiKeY = "009c5084fe571e9017166f0c1f7c4003";
 const apiRequest = "https://api.themoviedb.org/3";
 const imgPath = "https://image.tmdb.org/t/p/original";
 
